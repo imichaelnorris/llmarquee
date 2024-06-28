@@ -1,3 +1,5 @@
+import { llMarqueeCallback } from './ticker.js';
+
 // LLMarquee acts as an HTML Marquee with text generated from a prompt
 class LLMarquee extends HTMLElement {
     static get observedAttributes() {
@@ -33,7 +35,7 @@ class LLMarquee extends HTMLElement {
     }
 
     async fetchLLMResponse(prompt) {
-        // llMarqueeCallback(prompt)
+        return llMarqueeCallback(prompt);
         // Placeholder for LLM API call.
         // Replace this with the actual API call to get the response.
         return new Promise((resolve) => {
