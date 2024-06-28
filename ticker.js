@@ -43,7 +43,7 @@ class Ticker {
     }
     console.log("stopped waiting");
     const messages = [
-      { role: "system", content: "You are generating the ticker of a news feed. Be precise, concise, and nice" },
+      { role: "system", content: "Be concise and nice" },
       { role: "user", content: prompt },
     ];
     console.log('reply?');
