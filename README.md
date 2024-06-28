@@ -3,8 +3,11 @@ An Web Component that acts as a Marquee and uses a Large (actually Small) Langua
 
 ## Overview
 index.html --> Example page
+
 llmarquee.js --> The HTML Component
+
 llmarquee.css --> The style
+
 ticker.js --> The implementation
 
 # TODO
