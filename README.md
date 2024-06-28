@@ -14,4 +14,4 @@ docs: https://www.jsdelivr.com/package/npm/@mlc-ai/web-llm
 
 [2] Add an initProgressCallback so users will see that it's loading
 
-[3] Make llmarquee.js accept streaming updates.
+[3] Accept streaming updates to llmarquee.js.
