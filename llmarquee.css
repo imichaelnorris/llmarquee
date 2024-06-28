@@ -3,7 +3,8 @@ ll-marquee {
     overflow: hidden;
     white-space: nowrap;
     box-sizing: border-box;
-    animation: marquee 20s linear infinite;
+    /* Slow enough to read on my laptop screen. */
+    animation: marquee 25s linear infinite;
 }
 
 @keyframes marquee {
