@@ -1,5 +1,5 @@
 # LLMarquee
-Use a Large (actually small) Language Model to generate text in an HTML Marquee
+An Web Component that acts as a Marquee and uses a Large (actually Small) Language Model to generate text.
 
 ## Overview
 index.html --> Example page
