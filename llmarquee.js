@@ -1,3 +1,4 @@
+// LLMarquee acts as an HTML Marquee with text generated from a prompt
 class LLMarquee extends HTMLElement {
     static get observedAttributes() {
         return ['prompt'];
@@ -8,6 +9,7 @@ class LLMarquee extends HTMLElement {
         const shadow = this.attachShadow({ mode: 'open' });
         this.content = document.createElement('div');
         shadow.appendChild(this.content);
+        this.addEventListener("animationend", this.animationend);
     }
 
     connectedCallback() {
@@ -31,6 +33,7 @@ class LLMarquee extends HTMLElement {
     }
 
     async fetchLLMResponse(prompt) {
+        // llMarqueeCallback(prompt)
         // Placeholder for LLM API call.
         // Replace this with the actual API call to get the response.
         return new Promise((resolve) => {
@@ -38,6 +41,10 @@ class LLMarquee extends HTMLElement {
                 resolve(`Response for prompt: ${prompt}`);
             }, 1000);
         });
+    }
+
+    animationend(event) {
+        this.updateContent();
     }
 }
 
