@@ -46,6 +46,7 @@ class LLMarquee extends HTMLElement {
     }
 
     animationend(event) {
+        console.log("animation end");
         this.updateContent();
     }
 }

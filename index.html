@@ -10,6 +10,13 @@
     <link rel="stylesheet" href="./llmarquee.css">
 </head>
 <body>
-    <ll-marquee prompt="Say a list of 10 colors separated by commas"></ll-marquee>
+    <ll-marquee prompt="Create a random 4-character string in all-caps that looks like a stock ticker, then a floating point number that looks like its price." style="height: 155px;"></ll-marquee>
+    <div id="controls">
+      <input id="prompt" placeholder="llmarquee prompt:" style="width: 100%; margin: 0px; padding: 0px;"/>
+      <div id="speed-control">
+        <input type="range" id="speed" name="speed" min="1" max="100" step=".01"/>
+        <label for="speed">Speed</label>
+      </div>
+    </div>
 </body>
 </html>

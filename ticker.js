@@ -21,7 +21,7 @@ class Ticker {
         this.loaded = true;
       }
     }
-    const selectedModel = "TinyLlama-1.1B-Chat-v0.4-q4f16_1-MLC-1k";
+    const selectedModel = "TinyLlama-1.1B-Chat-v1.0-q4f32_1-MLC-1k";
   
     this.engine = await CreateMLCEngine(
       selectedModel,
